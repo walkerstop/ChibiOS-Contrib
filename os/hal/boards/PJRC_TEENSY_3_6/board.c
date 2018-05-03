@@ -198,6 +198,34 @@ const PALConfig pal_default_config =
 };
 #endif
 
+#if HAL_USE_SDC
+/**
+ * @brief   Insertion monitor function.
+ * @note    Not supported, always assumed inserted
+ *
+ * @param[in] sdcp      pointer to the @p SDCDriver object
+ *
+ * @notapi
+ */
+bool sdc_lld_is_card_inserted(SDCDriver *sdcp) {
+  return TRUE;
+}
+
+/**
+ * @brief   Protection detection.
+ * @note    Not supported, always not protected.
+ *
+ * @param[in] sdcp      pointer to the @p SDCDriver object
+ *
+ * @notapi
+ */
+bool sdc_lld_is_write_protected(SDCDriver *sdcp) {
+
+  (void)sdcp;
+  return FALSE;
+}
+#endif /* HAL_USE_SDC */
+
 /**
  * @brief   Early initialization code.
  * @details This initialization must be performed just after stack setup
@@ -214,3 +242,5 @@ void __early_init(void) {
  */
 void boardInit(void) {
 }
+
+
