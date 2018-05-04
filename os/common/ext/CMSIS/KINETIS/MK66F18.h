@@ -75,6 +75,8 @@
 **         Renamed interrupt vector LLW to LLWU.
 **     - rev. 3.0 (2015-03-25)
 **         Registers updated according to the reference manual revision 1, March 2015
+**     - Revised 2018-05-04 by Michael Walker <walkerstop@gmail.com> to support ChibiOS LLD HAL
+**         Register names and other names updated to match other Kinetis definitions for other MCUs
 **
 ** ###################################################################
 */
@@ -212,13 +214,13 @@ typedef enum IRQn {
   I2S0_Rx_IRQn                 = 29,               /**< I2S0 receive interrupt */
   Reserved46_IRQn              = 30,               /**< Reserved interrupt 46 */
   UART0Status_IRQn             = 31,               /**< UART0 Receive/Transmit interrupt */
-  UART0Error_IRQn               = 32,               /**< UART0 Error interrupt */
+  UART0Error_IRQn              = 32,               /**< UART0 Error interrupt */
   UART1Status_IRQn             = 33,               /**< UART1 Receive/Transmit interrupt */
-  UART1Error_IRQn               = 34,               /**< UART1 Error interrupt */
+  UART1Error_IRQn              = 34,               /**< UART1 Error interrupt */
   UART2Status_IRQn             = 35,               /**< UART2 Receive/Transmit interrupt */
-  UART2Error_IRQn               = 36,               /**< UART2 Error interrupt */
+  UART2Error_IRQn              = 36,               /**< UART2 Error interrupt */
   UART3Status_IRQn             = 37,               /**< UART3 Receive/Transmit interrupt */
-  UART3Error_IRQn               = 38,               /**< UART3 Error interrupt */
+  UART3Error_IRQn              = 38,               /**< UART3 Error interrupt */
   ADC0_IRQn                    = 39,               /**< ADC0 interrupt */
   CMP0_IRQn                    = 40,               /**< CMP0 interrupt */
   CMP1_IRQn                    = 41,               /**< CMP1 interrupt */
@@ -247,7 +249,7 @@ typedef enum IRQn {
   SWI_IRQn                     = 64,               /**< Software interrupt */
   SPI2_IRQn                    = 65,               /**< SPI2 Interrupt */
   UART4Status_IRQn             = 66,               /**< UART4 Receive/Transmit interrupt */
-  UART4Error_IRQn               = 67,               /**< UART4 Error interrupt */
+  UART4Error_IRQn              = 67,               /**< UART4 Error interrupt */
   Reserved84_IRQn              = 68,               /**< Reserved interrupt 84 */
   Reserved85_IRQn              = 69,               /**< Reserved interrupt 85 */
   CMP2_IRQn                    = 70,               /**< CMP2 interrupt */
