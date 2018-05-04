@@ -4466,12 +4466,10 @@ typedef struct {
 #define DAC_C1_DACBFEN DAC_C1_DACBFEN_MASK
 #define DAC_C1_DACBFMD_MASK                      (0x6U)
 #define DAC_C1_DACBFMD_SHIFT                     (1U)
-#define DAC_C1_DACBFMD_SET(x)                    (((uint8_t)(((uint8_t)(x)) << DAC_C1_DACBFMD_SHIFT)) & DAC_C1_DACBFMD_MASK)
-#define DAC_C1_DACBFMD DAC_C1_DACBFMD_MASK
+#define DAC_C1_DACBFMD(x)                    (((uint8_t)(((uint8_t)(x)) << DAC_C1_DACBFMD_SHIFT)) & DAC_C1_DACBFMD_MASK)
 #define DAC_C1_DACBFWM_MASK                      (0x18U)
 #define DAC_C1_DACBFWM_SHIFT                     (3U)
-#define DAC_C1_DACBFWM_SET(x)                    (((uint8_t)(((uint8_t)(x)) << DAC_C1_DACBFWM_SHIFT)) & DAC_C1_DACBFWM_MASK)
-#define DAC_C1_DACBFWM DAC_C1_DACBFWM_MASK
+#define DAC_C1_DACBFWM(x)                    (((uint8_t)(((uint8_t)(x)) << DAC_C1_DACBFWM_SHIFT)) & DAC_C1_DACBFWM_MASK)
 #define DAC_C1_DMAEN_MASK                        (0x80U)
 #define DAC_C1_DMAEN_SHIFT                       (7U)
 #define DAC_C1_DMAEN_SET(x)                      (((uint8_t)(((uint8_t)(x)) << DAC_C1_DMAEN_SHIFT)) & DAC_C1_DMAEN_MASK)
@@ -4480,12 +4478,10 @@ typedef struct {
 /*! @name C2 - DAC Control Register 2 */
 #define DAC_C2_DACBFUP_MASK                      (0xFU)
 #define DAC_C2_DACBFUP_SHIFT                     (0U)
-#define DAC_C2_DACBFUP_SET(x)                    (((uint8_t)(((uint8_t)(x)) << DAC_C2_DACBFUP_SHIFT)) & DAC_C2_DACBFUP_MASK)
-#define DAC_C2_DACBFUP DAC_C2_DACBFUP_MASK
+#define DAC_C2_DACBFUP(x)                    (((uint8_t)(((uint8_t)(x)) << DAC_C2_DACBFUP_SHIFT)) & DAC_C2_DACBFUP_MASK)
 #define DAC_C2_DACBFRP_MASK                      (0xF0U)
 #define DAC_C2_DACBFRP_SHIFT                     (4U)
-#define DAC_C2_DACBFRP_SET(x)                    (((uint8_t)(((uint8_t)(x)) << DAC_C2_DACBFRP_SHIFT)) & DAC_C2_DACBFRP_MASK)
-#define DAC_C2_DACBFRP DAC_C2_DACBFRP_MASK
+#define DAC_C2_DACBFRP(x)                    (((uint8_t)(((uint8_t)(x)) << DAC_C2_DACBFRP_SHIFT)) & DAC_C2_DACBFRP_MASK)
 
 
 /*!
