@@ -242,5 +242,3 @@ void __early_init(void) {
  */
 void boardInit(void) {
 }
-
-
